@@ -90,6 +90,7 @@ class Ui_MainWindow(object):
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
+        self.comboBox.setCurrentIndex(1)
         self.horizontalLayout_4.addWidget(self.comboBox)
         self.verticalLayout_2.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
@@ -187,8 +188,8 @@ class Ui_MainWindow(object):
         self.start_stop_button.setDisabled(True)
 
         self.gen_amount.setText('64')
-        self.top_k_notes.setText('10')
-        self.top_k_durations.setText('10')
+        self.top_k_notes.setText('128')
+        self.top_k_durations.setText('128')
         self.top_k_offset.setText('0')
         self.beam_width.setText('3')
         self.creativity.setText('0')
