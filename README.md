@@ -38,7 +38,7 @@ While attempting to train a model to generate novel sequences of music based off
 
 https://user-images.githubusercontent.com/54057327/149260274-8340f525-db13-43d9-b87d-16347a23e9a4.mp4
 
-After removing the encoder from the model, sizing it down, increasing the input sequence length (max positional encoding lenght) and increasing dropout, the model started to come up with quite novel but still tonally coherent sequences.
+After removing the encoder from the model, sizing it down, increasing the input sequence length (max positional encoding length) and increasing dropout, the model started to come up with quite novel but still tonally coherent sequences.
 
 https://user-images.githubusercontent.com/54057327/149260267-40eeebae-dfa7-4fbf-9a1b-58362e7a2471.mp4
 
