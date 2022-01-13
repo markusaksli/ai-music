@@ -24,7 +24,7 @@ This is the simplest and fastest method. It will simply sample the most likely t
 #### Top K Sampling (*top_k*):
 This method also simply takes the log probabilities for the last token in the model output sequence but instead of simply choosing the most likely one it will sample from the top k logits (based on their probability distribution). The `top_k_notes` and `top_k_durations` arguments can be used to make the sampling window larger (more randomness) or smaller.
 
-If the output is still highly similar to Greedy Search it's likely that the top k softmax distribution looks something like `[0.999, 0.00001, 0.0000005, ...]`. In this case the `top_k_offset` argument can be used to remove the first n indicies from the distribution, making it far more likely to generate unlikely and more unpredictable sequences.
+If the output is still highly similar to Greedy Search it's likely that the top k softmax distribution looks something like `[0.999, 0.00001, 0.0000005, ...]`. In this case the `top_k_offset` argument can be used to remove the first n indicies from the distribution, making it far more likely to generate sequences that are completely different compared to greedy search.
 
 #### Beam Search:
 This method is similar to greedy search but it will give an approximation for the most likely total generated sequence instead of naively sampling the most likely token at each step. To do this it keeps track of `n=beam_width` sequences at each step and considers the next token possibilities for all of them (evaluating `beam_width * vocab_len` probabilies at each step).
