@@ -3,3 +3,4 @@ numpy~=1.22.0
 music21~=7.1.0
 PyQt5~=5.15.6
 wandb~=0.12.9
+pygame~=2.1.2
