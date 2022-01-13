@@ -34,7 +34,7 @@ At the end of each step it will reduce all the possible continuations for the cu
 **All of these methods can be biased towards generating less rests (SEP tokens between groups of notes played at the same time) and more notes by using the `creativity` argument.**
 
 # Samples
-While attempting to train a model to generate novel sequences of music based off of the input we ran into a lot of overfitting due to the relatively small dataset. Previously we attempted to use a classic Transformer Seq2Seq model with both an encoder and decoder. This led to poor results with either underfitting and generating noisy sequences, completely overfitting and generating training sequence one-to-one regardless of the input.
+While attempting to train a model to generate novel sequences of music based off of the input we ran into a lot of overfitting due to the relatively small dataset. Previously we attempted to use a classic Transformer Seq2Seq model with both an encoder and decoder. This led to poor results with either underfitting and generating noisy sequences, or completely overfitting and generating a training sequence one-to-one regardless of the input.
 
 https://user-images.githubusercontent.com/54057327/149260274-8340f525-db13-43d9-b87d-16347a23e9a4.mp4
 
