@@ -44,9 +44,13 @@ After removing the encoder from the model, sizing it down, increasing the input 
 
 https://user-images.githubusercontent.com/54057327/149260267-40eeebae-dfa7-4fbf-9a1b-58362e7a2471.mp4
 
-An interesting side-effect was that as the model started to more confidently predict sequences of notes instead of silence, the validation loss during training grew. We still saw very high training accuracy at the end of training, indicating some degree of overfitting however the predicted output was no longer too similar to the training data.
+Finally here is an example of what the final trained model can generate from an empty input (first 32 notes generated with top k sampling and the rest with greedy search):
+
+https://user-images.githubusercontent.com/54057327/149422993-8e04eeea-e7e8-4acf-8869-8c562e8cc694.mp4
 
 # Training
+
+An interesting side-effect of attempting to maximise generalization was that as the model started to more confidently predict sequences of notes instead of silence, the validation loss during training grew. We still saw very high training accuracy at the end of training, indicating some degree of overfitting however the predicted output was no longer too similar to the training data.
 
 ### [wandb run](https://wandb.ai/markusaksli/ai-music/runs/1dvw6st2)
 
