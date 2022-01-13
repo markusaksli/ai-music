@@ -16,7 +16,7 @@ The model was trained on a single GTX 1080 Ti and is able to generate about 16 n
 The GUI can be used to set the arguments for the generation algorithm and then a new sequence can be generated for the given input (or empty imput). Once a sequence has been generated (which may freeze the GUI and take a while) it will automatically start playing. It can then be extended further or saved to a file.
 
 ## Sequence generation algorithms
-The trained models can be used in a TensorFlow Module that has different search algorithms for sequence generation. There are three methods of generating new tokens to extend the given sequence using extend_sequence (chosen by the *search* argument in the GUI):
+The trained models can be used in a [TensorFlow Module](https://github.com/markusaksli/ai-music/blob/785e54fef80696f3fc7c505835f08e620fbd59f7/music_transformer/transformer.py#L274-L433) that has different search algorithms for sequence generation. There are three methods of generating new tokens to extend the given sequence using extend_sequence (chosen by the *search* argument in the GUI):
 
 #### Greedy Search:
 This is the simplest and fastest method. It will simply sample the most likely token from the last position in the model output and add it back to the input sequence. It will keep iterating until it reaches the desired length or an EOS token.            
