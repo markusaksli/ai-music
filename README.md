@@ -44,6 +44,8 @@ https://user-images.githubusercontent.com/54057327/149260267-40eeebae-dfa7-4fbf-
 
 An interesting side-effect was that as the model started to more confidently predict sequences of notes instead of silence, the validation loss during training grew. We still saw very high training accuracy at the end of training, indicating some degree of overfitting however the predicted output was no longer too similar to the training data.
 
+# Training
+
 ![Trained Model](https://github.com/markusaksli/ai-music/blob/main/samples/images/run_summary.png) ![Hyperparameters](https://user-images.githubusercontent.com/54057327/149263773-2087fbdd-2503-4932-b18f-20bb532e0463.png)
 
 ## Sources and References
