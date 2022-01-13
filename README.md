@@ -8,7 +8,7 @@ The trained model can be played around with by running [music_generator_gui.py](
 ![Generator](https://github.com/markusaksli/ai-music/blob/main/samples/images/generator.png)
 
 #### Requirements
-The requirements to run the music generator or to train a new model are in [requirements.txt](https://github.com/markusaksli/ai-music/blob/main/requirements.txt)
+The requirements to run the music generator or to train a new model are in [requirements.txt](https://github.com/markusaksli/ai-music/blob/main/requirements.txt). You can create a new virtual environment and install all of them by running the [setup](https://github.com/markusaksli/ai-music/blob/main/setup.bat) script.
 
 The model was trained on a single GTX 1080 Ti and is able to generate about 16 notes in 1.5s using greedy search on the same hardware. This should mean the model can run on most modern GPUs but CPU performance has not been testsed.
 
