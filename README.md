@@ -29,7 +29,7 @@ If the output is still highly similar to Greedy Search it's likely that the top 
 #### Beam Search:
 This method is similar to greedy search but it will give an approximation for the most likely total generated sequence instead of naively sampling the most likely token at each step. To do this it keeps track of `n=beam_width` sequences at each step and considers the next token possibilities for all of them (evaluating `beam_width * vocab_len` probabilies at each step).
 
-At the end of each step it will reduce all the possible continuations for the current `n=beam_width` sequences to the top `k=beam_width` most likely sequences (summing the log probability, which is the same as maximising the multiplied probabilities but more numerically stable). At the end this will give a far bettera pproximation for the most "accurate" continuation of the input sequence compared to Greedy Search (just a lot slower).
+At the end of each step it will reduce all the possible continuations for the current `n=beam_width` sequences to the top `k=beam_width` most likely sequences (summing the log probability, which is the same as maximising the multiplied probabilities but more numerically stable). At the end this will give a far better approximation for the most "accurate" continuation of the input sequence compared to Greedy Search (just a lot slower).
 
 **All of these methods can be biased towards generating less rests (SEP tokens between groups of notes played at the same time) and more notes by using the `creativity` argument.**
 
