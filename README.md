@@ -1,6 +1,8 @@
 # Music Generation With a Transformer Decoder Model
 This repository contains **TensorFlow** code for training a vanilla layered [Transformer](https://www.tensorflow.org/text/tutorials/transformer) Decoder model using MIDI tokenization code from [musicautobot](https://github.com/bearpelican/musicautobot). There is also a trained model that was trained on a subset of [Final Fantasy OST MIDI files](https://github.com/Skuldur/Classical-Piano-Composer/tree/master/midi_songs).
 
+The goal was to create a more advanced version of the LSTM model described in [How to Generate Music using a LSTM Neural Network in Keras](https://towardsdatascience.com/how-to-generate-music-using-a-lstm-neural-network-in-keras-68786834d4c5) to generate not only pitch but timing as well (using the same dataset). The sources for what we tried and looked at for improving the approach in the article are listed at the end. The primary inspiration for the more advance token generation was [musicautobot](https://github.com/bearpelican/musicautobot).
+
 ## Generator GUI
 
 The trained model can be played around with by running [music_generator_gui.py](https://github.com/markusaksli/ai-music/blob/main/music_generator_gui.py).
