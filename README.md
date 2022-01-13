@@ -46,6 +46,8 @@ An interesting side-effect was that as the model started to more confidently pre
 
 # Training
 
+### [wandb run](https://wandb.ai/markusaksli/ai-music/runs/1dvw6st2)
+
 ![Trained Model](https://github.com/markusaksli/ai-music/blob/main/samples/images/run_summary.png) ![Hyperparameters](https://user-images.githubusercontent.com/54057327/149263773-2087fbdd-2503-4932-b18f-20bb532e0463.png)
 
 ## Sources and References
